@@ -1,0 +1,52 @@
+@import "tailwindcss";
+@config "../../tailwind.config.cjs";
+
+p,
+h2,
+li,
+span,
+input,
+a,
+textarea,
+code,
+pre,
+div {
+  font-family: var(--font-ubuntu), serif;
+  font-weight: 400;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: var(--font-ubuntu), serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: var(--font-ubuntu), serif;
+  font-weight: 700;
+}
+
+button {
+  font-family: var(--font-ubuntu), serif;
+  font-weight: 500;
+}
+
+/* CSS variables for the theme */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --font-ubuntu: Ubuntu, "Ubuntu Fallback", sans-serif;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+}
