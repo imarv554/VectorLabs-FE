@@ -1,6 +1,6 @@
 import React from "react";
 import { Icon } from "@/widgets";
-import ServiceCard from "@/widgets/serviceCard";
+
 import homeData from "@/data/home.data";
 
 export function Card() {
@@ -20,7 +20,7 @@ export function Card() {
             <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
             <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
           </div>
-          <ServiceCard text={boxes.sn} />
+
           <div>
             <h2 className="dark:text-white text-black mt-4 lg:text-5xl text-3xl font-font">
               {boxes.title}
