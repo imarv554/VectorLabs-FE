@@ -17,7 +17,7 @@ export default function Hero() {
   ];
 
   return (
-    <div className="flex justify-center items-center py-40 gap-20 w-full xl:px-0 lg:px-10 xl:overflow-none lg:overflow-none md:overflow-none">
+    <div className="flex justify-center items-center py-40 gap-20 w-full xl:px-0 lg:px-10 px-4 overflow-hidden">
       <div className="flex justify-center w-full">
         {herosection?.map((hero, i) => (
           <div key={i} className="flex flex-col lg:gap-40 gap-20">
@@ -26,7 +26,7 @@ export default function Hero() {
                 <div key={h} className="text-white flex flex-col gap-10">
                   <div className="flex flex-col gap-5">
                     <div className="flex flex-col gap-6">
-                      <h1 className="xl:text-7xl lg:text-6xl md:text-4xl text-2xl capitalize text-center font-bold">
+                      <h1 className="xl:text-6xl lg:text-5xl md:text-3xl text-2xl capitalize text-center font-bold max-w-full">
                         {he.title}
                       </h1>
                       <div className="mt-4">
