@@ -45,7 +45,7 @@ export const TypeWidget = ({
 
   const renderWords = () => {
     return (
-      <motion.div ref={scope} className="inline">
+      <motion.div ref={scope} className="flex flex-wrap justify-center items-center">
         {wordsArray.map((word, idx) => {
           return (
             <div
