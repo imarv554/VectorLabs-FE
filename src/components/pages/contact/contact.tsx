@@ -4,14 +4,12 @@ import { ContactWidget } from "@/widgets/contactWidget";
 import contactData from "@/data/contact.data";
 import { cn } from "@/lib/util";
 import {
-  AIPMS,
   Builds,
   Connect,
   Designing,
   Friendly,
   Launch,
   LowCost,
-  Markets,
   Notify,
   OnTime,
   Pace,
@@ -24,78 +22,69 @@ import {
 export const products = [
   {
     title: "Design",
-    link: "/coming-soon",
+    link: "#",
     thumbnail: Designing.src,
   },
   {
     title: "Build",
-    link: "/coming-soon",
+    link: "#",
     thumbnail: Builds.src,
   },
   {
     title: "Low Cost",
-    link: "/coming-soon",
+    link: "#",
     thumbnail: LowCost.src,
   },
   {
     title: "User Friendly",
-    link: "/coming-soon",
+    link: "#",
     thumbnail: Friendly.src,
   },
   {
     title: "Connect",
-    link: "/coming-soon",
+    link: "#",
     thumbnail: Connect.src,
   },
   {
     title: "Smooth",
-    link: "/coming-soon",
+    link: "#",
     thumbnail: Smooth.src,
   },
 
   {
     title: "Teams",
-    link: "/coming-soon",
+    link: "#",
     thumbnail: Teams.src,
   },
-  {
-    title: "Ai & PMS",
-    link: "/coming-soon",
-    thumbnail: AIPMS.src,
-  },
-  {
-    title: "Market Place",
-    link: "/coming-soon",
-    thumbnail: Markets.src,
-  },
+
   {
     title: "Pace",
-    link: "/coming-soon",
+    link: "#",
     thumbnail: Pace.src,
   },
   {
     title: "Sales",
-    link: "/coming-soon",
+    link: "#",
     thumbnail: Sales.src,
   },
   {
     title: "Productivity",
-    link: "/coming-soon",
+    link: "#",
     thumbnail: Productivity.src,
   },
   {
     title: "On Time",
-    link: "/coming-soon",
+    link: "#",
     thumbnail: OnTime.src,
   },
   {
     title: "Notify",
-    link: "/coming-soon",
+    link: "#",
     thumbnail: Notify.src,
   },
   {
     title: "Launch",
-    link: "/coming-soon",
+    link: "#",
     thumbnail: Launch.src,
   },
 ];

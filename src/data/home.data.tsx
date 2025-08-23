@@ -28,260 +28,33 @@ import {
 const homeData = {
   homepage: {
     header: [
-      { icon: Logo, name: "vl-logo" },
-      { icon: VLDark, name: "vl-logo" },
+      { icon: Logo, name: "affidex-logo" },
+      { icon: VLDark, name: "affidex-logo" },
       // menu buttons
-      { menu: "solutions", link: "" },
-      { menu: "about", link: "" },
-      { menu: "VL labs", link: "" },
-      { menu: "token", link: "" },
-      { dashMenu: "get started", link: "https://marketplace.vetorlabs.com" },
-      {
-        subHeader: [
-          {
-            solutions: [
-              {
-                services: [
-                  { title: "services" },
-                  {
-                    title: "CSDS",
-                    shortName: "CSDS",
-                    subText: "Custom Web2 & Web3 Development",
-                    link: "/csds",
-                  },
-                  {
-                    title: "MpRS",
-                    shortName: "MpRS",
-                    subText: "Connect Businesses & Developers",
-                    link: "https://marketplace.vetorlabs.com",
-                  },
-                  {
-                    title: "AI & PMS",
-                    shortName: "AI & PMS",
-                    subText: "AI & Project Management Tools Subscription",
-                    link: "/aipms",
-                  },
-                ],
-                regions: [
-                  { title: "regions" },
-                  {
-                    title: "UAE",
-                    subText: "licensing and headquarters",
-                    text: "coming soon",
-                  },
-                ],
-                buttons: [
-                  { title: "others" },
-                  {
-                    title: "Pricing",
-                    subText: "Discover Our Affordable Plans",
-                    link: "/pricing",
-                    icon: <GoArrowDownRight />,
-                  },
-                  {
-                    title: "Sustainability",
-                    subText: "Learn About Our Green Initiatives",
-                    link: "/coming-soon",
-                    icon: <GoArrowDownRight />,
-                  },
-                ],
-              },
-            ],
+      { menu: "home", link: "/" },
+      { menu: "products", link: "/products" },
+      { menu: "services", link: "/services" },
+      { menu: "white paper", link: "/white-paper" },
+      { menu: "about", link: "/about" },
+      { menu: "contact", link: "/contact" },
+      { dashMenu: "contact", link: "/contact" },
 
-            about: [
-              {
-                aboutUS: [
-                  {
-                    title: "about VL",
-                    subText: "Learn more about our vision and mission",
-                  },
-                  {
-                    title: "about us",
-                    subText: "Discover who we are and what drives us",
-                    link: "/about-us",
-                  },
-                  {
-                    title: "sustainability",
-                    subText:
-                      "Understand our commitment to a sustainable future",
-                    link: "/coming-soon",
-                  },
-                ],
-
-                resources: [
-                  {
-                    title: "resources",
-                    subText: "Explore useful tools and insights",
-                  },
-                  {
-                    title: "careers",
-                    subText: "Join our growing team and make an impact",
-                    link: "/coming-soon",
-                  },
-                  {
-                    title: "partner panel",
-                    subText: "Collaborate with us for exciting opportunities",
-                    link: "/coming-soon",
-                    text: "coming soon",
-                  },
-                ],
-
-                button: [
-                  { title: "contact us" },
-                  {
-                    title: "email",
-                    subText: "hello@vetorlabs.com",
-                    link: "mailto:hello@vetorlabs.com",
-                    icon: <GoArrowDownRight />,
-                  },
-                ],
-              },
-            ],
-            lab: [
-              {
-                vlTools: [
-                  { title: "VL Labs" },
-                  {
-                    title: "Visual Loom",
-                    subText: "A design software powered by vetorlabs.",
-                    link: "https://visualloom.vetorlabs.com",
-                  },
-                  {
-                    title: "VL Labs",
-                    subText: "Innovation hub for impactful solutions.",
-                    link: "/coming-soon",
-                  },
-                  {
-                    title: "SaSS Products",
-                    subText: "Scalable SaaS solutions for businesses.",
-                    link: "/coming-soon",
-                  },
-                ],
-                bSoln: [
-                  { title: "Business Solutions" },
-                  {
-                    title: "Software Solutions",
-                    subText: "Custom software tailored to your business needs.",
-                    link: "/coming-soon",
-                  },
-                  {
-                    title: "Analytics & Insights",
-                    subText: "Transform data into actionable insights.",
-                    link: "/coming-soon",
-                  },
-                  {
-                    title: "Customer Engagement",
-                    subText:
-                      "Tools to enhance customer interaction and retention.",
-                    link: "/coming-soon",
-                  },
-                ],
-                marketGrowth: [
-                  { title: "Marketing & Growth" },
-                  {
-                    title: "Web2 Solutions",
-                    subText:
-                      "Scalable tools for traditional marketing platforms.",
-                    link: "/coming-soon",
-                  },
-                  {
-                    title: "Web3 Innovations",
-                    subText:
-                      "Cutting-edge marketing for blockchain ecosystems.",
-                    link: "/coming-soon",
-                  },
-                  {
-                    title: "Custom Strategies",
-                    subText: "Tailored growth plans to fit any business model.",
-                    link: "/coming-soon",
-                  },
-                ],
-              },
-            ],
-            token: [
-              {
-                overview: [
-                  { title: "Project Overview" },
-                  {
-                    title: "Whitepaper",
-                    subText: "Explore our detailed project goals.",
-                    link: "https://whitepaper.vetorlabs.com",
-                  },
-                  {
-                    title: "Roadmap",
-                    subText: "Discover key milestones and future plans.",
-                    link: "/roadmap",
-                  },
-                  {
-                    title: "Stake",
-                    subText: "Stake and delegate your tokens for rewards",
-                    link: "https://stake.vetorlabs.com",
-                  },
-                  {
-                    title: "VetorScan",
-                    subText: "VetorChain explorer",
-                    link: "https://explorer.vetorlabs.com",
-                  },
-                ],
-                economics: [
-                  { title: "Token Economics" },
-                  {
-                    title: "Tokenomics",
-                    subText: "Understand token structure and allocation.",
-                    link: "https://whitepaper.vetorlabs.com/introduction/vlt/tokenomics",
-                  },
-                  {
-                    title: "Faucet",
-                    subText: "Claim VLT Tokens every 24hours.",
-                    link: "https://faucet.vetorlabs.com",
-                    text: "VLT Faucet",
-                  },
-                  {
-                    title: "Buy Token",
-                    subText: "Purchase tokens and join the network.",
-                    link: "/coming-soon",
-                    text: "coming soon",
-                  },
-                ],
-                participation: [
-                  { title: "Social Media" },
-                  {
-                    name: "X",
-                    icon: <FaXTwitter />,
-                    link: "https://twitter.com",
-                  },
-                  {
-                    name: "Telegram",
-                    icon: <FaTelegramPlane />,
-                    link: "https://telegram.org",
-                  },
-                  {
-                    name: "Discord",
-                    icon: <FaDiscord />,
-                    link: "https://discord.com",
-                  },
-                ],
-              },
-            ],
-          },
-        ],
-      },
     ],
 
     herosection: [
       {
         hero: [
           {
-            title: "Innovative Solutions for the",
+            title: "Welcome to Affidex Lab",
             subtitle:
-              "Your vision, our code. We strive to transform your ideas into impactful digital solutions",
+              "Formerly CreedTech Group, we've evolved into an incubation laboratory focused on building the next generation of blockchain and AI-powered solutions.",
             img: VLDashboard,
             name: "dashboard",
           },
         ],
         button: [
-          { title: "get started", link: "https://marketplace.vetorlabs.com" },
-          { title: "learn more", link: "/about-us" },
+          { title: "explore our products", link: "/products" },
+          { title: "learn about us", link: "/about" },
         ],
       },
     ],
@@ -292,32 +65,32 @@ const homeData = {
           {
             title: [
               {
-                title: "Benefits",
-                subtitle: "Your benefits from using our services",
-                text: "Embarking on a journey as true Web3 natives, we aim to lead the blockchain revolution with innovative solutions and unmatched expertise.",
+                title: "What We Do",
+                subtitle: "We incubate innovative projects that push the boundaries of blockchain technology and artificial intelligence",
+                text: "As an incubation laboratory, we focus on building the next generation of blockchain and AI-powered solutions.",
               },
             ],
             boxes: [
               {
                 icon: <FaDollarSign />,
                 sn: "01",
-                title: "Flexible Pricing Options",
+                title: "Privacy-First Solutions",
                 subtext:
-                  "Our pricing models are designed to fit businesses of all sizes, offering affordability without compromising quality. Gain maximum value from every dollar spent with tailored, transparent plans.",
+                  "Building secure, privacy-focused applications that put user control first. Our solutions prioritize data protection and user privacy in everything we develop.",
               },
               {
-                icon: <FaBriefcase />,
+                icon: <FaRobot />,
                 sn: "02",
-                title: "Streamline Workflows",
+                title: "AI Innovation",
                 subtext:
-                  "Optimize your operations with dynamic workflows tailored to meet your needs. Achieve seamless integration with your processes while boosting productivity and minimizing operational complexity.",
+                  "Leveraging artificial intelligence to create intuitive, powerful tools for everyone. We harness AI to solve complex problems and create user-friendly experiences.",
               },
               {
-                icon: <FaUsers />,
+                icon: <FaRocket />,
                 sn: "03",
-                title: "Dedicated Expert Teams",
+                title: "MVP Development",
                 subtext:
-                  "Partner with a team of skilled professionals who bring industry expertise and a results-driven approach. Experience reliable support, fast execution, and collaboration every step of the way.",
+                  "Rapidly prototyping and launching minimum viable products that solve real problems. We focus on bringing innovative ideas to market quickly and efficiently.",
               },
               {
                 icon: <FaComments />,
@@ -478,28 +251,28 @@ const homeData = {
       {
         footer: [
           {
-            title: [{ title: "Stay Connected with Vetor Labs" }],
+            title: [{ title: "Stay Connected with Affidex Lab" }],
             sectionTwo: [
               {
                 icon: <FaInfoCircle />,
                 title: "About Us",
-                text: "Learn more about our mission, vision, and the innovative solutions we provide at Vetor Labs.",
+                text: "Learn more about our mission, vision, and the innovative solutions we provide at Affidex Lab.",
                 buttontext: "Discover More",
-                link: "/about-us",
+                link: "/about",
               },
               {
                 icon: <FaTools />,
                 title: "Services",
                 text: "Explore the range of services we offer, designed to empower businesses and individuals.",
                 buttontext: "View Services",
-                link: "/csds",
+                link: "/services",
               },
               {
-                icon: <FaShoppingCart />,
-                title: "Marketplace",
-                text: "List your products or browse our marketplace to connect with opportunities and developers.",
-                buttontext: "Visit Marketplace",
-                link: "/marketplace",
+                icon: <FaRocket />,
+                title: "Products",
+                text: "Explore our innovative MVP products including Cipher Wallet and Gamify, showcasing our commitment to cutting-edge solutions.",
+                buttontext: "View Products",
+                link: "/products",
               },
               {
                 icon: <FaEnvelope />,
@@ -516,19 +289,19 @@ const homeData = {
                   // { title: 'Join Our Community' },
                   {
                     icon: <FaXTwitter />,
-                    link: "https://twitter.com/vetorlabs",
+                    link: "https://twitter.com/affidexlab",
                   },
-                  { icon: <FaTelegram />, link: "https://t.me/vetorlabs" },
-                  { icon: <FaDiscord />, link: "https://discord.gg/vetorlabs" },
+                  { icon: <FaTelegram />, link: "https://t.me/affidexlab" },
+                  { icon: <FaDiscord />, link: "https://discord.gg/affidexlab" },
                   {
                     icon: <FaYoutube />,
-                    link: "https://youtube.com/vetorlabs",
+                    link: "https://youtube.com/affidexlab",
                   },
                 ],
                 copy: [
                   {
                     title: [
-                      { copy: "© 2025 Vetor Labs. All Rights Reserved." },
+                      { copy: "© 2025 Affidex Lab. All Rights Reserved." },
                     ],
                     buttons: [
                       { title: "Privacy Policy", link: "/privacy-policy" },

@@ -5,7 +5,7 @@ export default function TermsAndConditions() {
       <section className="xl:px-20 lg:px-2 px-2 text-white py-10 xl:text-justify lg:text-justify text-start">
         <h1 className="text-3xl font-semibold mb-6">Terms and Conditions</h1>
         <p className="mb-4">
-          By accessing or using Vetor Labs, you agree to comply with and be
+          By accessing or using Affidex Lab, you agree to comply with and be
           bound by these Terms and Conditions. If you do not agree with any part
           of these terms, you must not use our platform or services.
         </p>
@@ -15,7 +15,7 @@ export default function TermsAndConditions() {
         </h2>
         <p className="mb-4">
           These Terms and Conditions constitute a legal agreement between you
-          and Vetor Labs, governing your use of our platform and services.
+          and Affidex Lab, governing your use of our platform and services.
         </p>
 
         <h2 className="text-2xl font-medium mt-6 mb-2">
@@ -44,7 +44,7 @@ export default function TermsAndConditions() {
         </h2>
         <p className="mb-4">
           All content, software, trademarks, and intellectual property on the
-          platform are owned by Vetor Labs. You may not use or distribute any of
+          platform are owned by Affidex Lab. You may not use or distribute any of
           these without written permission.
         </p>
 
@@ -56,7 +56,7 @@ export default function TermsAndConditions() {
 
         <h2 className="text-2xl font-medium mt-6 mb-2">6. Data Privacy</h2>
         <p className="mb-4">
-          Your use of Vetor Labs is subject to our Privacy Policy, which governs
+          Your use of Affidex Lab is subject to our Privacy Policy, which governs
           the collection and protection of your data.
         </p>
 
@@ -64,7 +64,7 @@ export default function TermsAndConditions() {
           7. Limitation of Liability
         </h2>
         <p className="mb-4">
-          Vetor Labs is not liable for indirect, incidental, or consequential
+          Affidex Lab is not liable for indirect, incidental, or consequential
           damages arising from your use of the platform.
         </p>
 
@@ -89,7 +89,7 @@ export default function TermsAndConditions() {
 
         <h2 className="text-2xl font-medium mt-6 mb-2">11. Indemnification</h2>
         <p className="mb-4">
-          You agree to indemnify Vetor Labs against any claims arising from your
+          You agree to indemnify Affidex Lab against any claims arising from your
           use of the platform or violation of these terms.
         </p>
 
@@ -98,7 +98,7 @@ export default function TermsAndConditions() {
         </h2>
         <p className="mb-4">
           Any disputes will be resolved through arbitration in the jurisdiction
-          where Vetor Labs operates.
+          where Affidex Lab operates.
         </p>
 
         <h2 className="text-2xl font-medium mt-6 mb-2">
@@ -112,7 +112,7 @@ export default function TermsAndConditions() {
         <h2 className="text-2xl font-medium mt-6 mb-2">14. Contact Us</h2>
         <p>
           If you have questions, please contact us at{" "}
-          <strong>hello@vetorlabs.com</strong>.
+          <strong>hello@affidexlab.com</strong>.
         </p>
       </section>
     </main>
