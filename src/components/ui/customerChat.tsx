@@ -24,14 +24,14 @@ const Chat = () => {
     const notificationMessage = {
       id: "welcome",
       text: "Welcome to our chat! How can we be of assistance?",
-      sender: "Vetor Labs",
+      sender: "Affidex Lab",
       logo: VLDark,
     };
 
     // Trigger the MagicBell notification each time the page loads
     if (magicbell && magicbell.showNotification) {
       magicbell.showNotification({
-        title: "Welcome to Vetor Labs",
+        title: "Welcome to Affidex Lab",
         message: "How can we be of assistance?",
         type: "info",
         // Include logo, sender, and text in the custom data
