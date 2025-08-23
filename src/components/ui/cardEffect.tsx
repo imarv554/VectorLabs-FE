@@ -2,7 +2,7 @@ import { CardHoverEffect } from "@/widgets/cardHoverEffect";
 import {
   FaEnvelope,
   FaInfoCircle,
-  FaShoppingCart,
+  FaRocket,
   FaTools,
 } from "react-icons/fa";
 
@@ -17,23 +17,23 @@ export const projects = [
   {
     title: "About Us",
     description:
-      "Learn more about our mission, vision, and the innovative solutions we provide at Vetor Labs.",
-    link: "/about-us",
+      "Learn more about our mission, vision, and the innovative solutions we provide at Affidex Lab.",
+    link: "/about",
     icon: <FaInfoCircle />,
   },
   {
     title: "Services",
     description:
       "Explore the range of services we offer, designed to empower businesses and individuals.",
-    link: "/csds",
+    link: "/services",
     icon: <FaTools />,
   },
   {
-    title: "Marketplace",
+    title: "Products",
     description:
-      "List your products or browse our marketplace to connect with opportunities and developers.",
-    link: "https://marketplace.vetorlabs.com",
-    icon: <FaShoppingCart />,
+      "Discover our innovative MVP products including Cipher Wallet and Gamify, showcasing our commitment to cutting-edge solutions.",
+    link: "/products",
+    icon: <FaRocket />,
   },
   {
     title: "Contact Us",

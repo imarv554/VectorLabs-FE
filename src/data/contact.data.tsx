@@ -9,8 +9,8 @@ const contactData = {
     getInTouch: [
       {
         title: "Get in touch",
-        subTitle: "let's chat, kindly reach out",
-        text: "Have questions or feedback? we're here to help. Send us a message, and we'll respond within 24 hours",
+        subTitle: "let's connect and innovate together",
+        text: "Ready to bring your ideas to life? Whether you're interested in our MVP development services, want to learn more about our products, or are exploring potential partnerships, we'd love to hear from you.",
       },
     ],
     form: [
@@ -21,8 +21,8 @@ const contactData = {
     textArea: [{ label: "Message", placeholder: "leave us message" }],
     contactImage: [{ img: ContactUS, name: "contact-us" }],
     contactDetails: [
-      { icon: <MdEmail />, title: "Email", text: "hello@vetorlabs.com" },
-      { icon: <MdLocalPhone />, title: "Phone", text: "+1 123 456 789" },
+      { icon: <MdEmail />, title: "Email", text: "hello@affidexlab.com" },
+      { icon: <MdLocalPhone />, title: "Phone", text: "+1 (555) 123-4567" },
       {
         icon: <MdOutlineLocationCity />,
         title: "Address",

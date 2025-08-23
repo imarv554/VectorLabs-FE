@@ -4,11 +4,11 @@ const HomePage = () => {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "Vetor Labs",
-    url: "https://vetorlabs.com/",
-    logo: "https://vetorlabs.com/vl-light.webp",
+    name: "Affidex Lab",
+    url: "https://affidexlab.netlify.app/",
+    logo: "https://affidexlab.netlify.app/vl-light.webp",
     description:
-      "Empowering Web2 and Web3 entrepreneurs with AI, blockchain, and advanced business tools.",
+      "Incubation laboratory for core utility projects. Formerly CreedTech Group, we've evolved into an incubation laboratory focused on building the next generation of blockchain and AI-powered solutions.",
   };
 
   return (

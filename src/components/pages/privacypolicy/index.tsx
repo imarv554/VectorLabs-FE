@@ -5,7 +5,7 @@ export default function PrivacyPolicy() {
       <section className="xl:px-20 lg:px-2 px-2 text-white py-10 xl:text-justify lg:text-justify text-start">
         <h1 className="text-3xl font-semibold mb-6">Privacy Policy</h1>
         <p className="mb-4">
-          At Vetor Labs, we value your privacy and are committed to protecting
+          At Affidex Lab, we value your privacy and are committed to protecting
           the personal data you share with us. This Privacy Policy outlines how
           we collect, use, store, and protect your data when you access and use
           our platform. By using our services, you agree to the collection and
@@ -68,11 +68,11 @@ export default function PrivacyPolicy() {
           </li>
           <li>
             <strong>Legal Compliance:</strong> To comply with legal obligations
-            or protect the rights of Vetor Labs.
+            or protect the rights of Affidex Lab.
           </li>
           <li>
             <strong>Business Transfers:</strong> In case of a merger,
-            acquisition, or sale of Vetor Labs.
+            acquisition, or sale of Affidex Lab.
           </li>
         </ul>
 
@@ -113,7 +113,7 @@ export default function PrivacyPolicy() {
           6. International Data Transfers
         </h2>
         <p className="mb-4">
-          By using Vetor Labs, you consent to the transfer and processing of
+          By using Affidex Lab, you consent to the transfer and processing of
           your data in the United States or other countries.
         </p>
 
@@ -121,7 +121,7 @@ export default function PrivacyPolicy() {
           7. Children’s Privacy
         </h2>
         <p className="mb-4">
-          Vetor Labs is not intended for children under the age of 13, and we do
+          Affidex Lab is not intended for children under the age of 13, and we do
           not knowingly collect information from children.
         </p>
 
@@ -135,7 +135,7 @@ export default function PrivacyPolicy() {
 
         <p>
           If you have any questions or concerns, please contact us at{" "}
-          <strong>hello@vetorlabs.com</strong>.
+          <strong>hello@affidexlab.com</strong>.
         </p>
       </section>
     </main>

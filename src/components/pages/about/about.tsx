@@ -1,230 +1,215 @@
 "use client";
 import React from "react";
-import {
-  AboutUS,
-  Bassat,
-  Climax,
-  Isaac,
-  Kavod,
-  Mission,
-  Vision,
-  Nuevo,
-} from "../../../../public/img";
-import { AboutUsWidget } from "@/widgets/aboutUsWidget";
-import { Card, Carousel } from "@/widgets/teamCarouselWidget";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { IoGlobeSharp } from "react-icons/io5";
-import { MdEmail } from "react-icons/md";
+import { FaRocket, FaEye, FaBullseye, FaHistory, FaUsers, FaLightbulb, FaShieldAlt } from "react-icons/fa";
 
-const Content = () => {
-  return (
-    <>
-      {[...new Array(3).fill(1)].map((_, index) => {
-        return (
-          <div
-            key={"dummy-content" + index}
-            className="bg-[#F5F5F7] dark:bg-gray-800 p-8 md:p-14 rounded-3xl mb-4"
-          >
-            <p className="text-gray-600 dark:text-gray-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
-              <span className="font-bold text-gray-700 dark:text-gray-200">
-                The first rule of Apple club is that you boast about Apple club.
-              </span>{" "}
-              Keep a journal, quickly jot down a grocery list, and take amazing
-              class notes. Want to convert those notes to text? No problem.
-              Langotiya jeetu ka mara hua yaar is ready to capture every
-              thought.
-            </p>
-            <img
-              src="https://assets.aceternity.com/macbook.png"
-              alt="Macbook mockup from Aceternity UI"
-              height="500"
-              width="500"
-              className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
-            />
-          </div>
-        );
-      })}
-    </>
-  );
-};
-
-export default function About() {
-  const aboutus = [
+const AboutPage = () => {
+  const values = [
     {
-      quote:
-        "Vetor Labs is an innovative digital platform built for both Web2 and Web3 entrepreneurs, businesses, and innovators seeking to leverage technology, artificial intelligence (AI), and blockchain for business success. Our platform is not just a place for users to develop projects; it is a comprehensive solution offering tailored tools, advanced services, and a thriving ecosystem to turn ideas into thriving businesses.",
-      name: "About Us",
-      src: AboutUS.src,
+      icon: <FaShieldAlt className="w-6 h-6" />,
+      title: "Privacy by Design",
+      description: "We build privacy-first solutions that put user control and data protection at the forefront of everything we create."
     },
     {
-      quote:
-        "Vetor Labs's vision is to build a platform where businesses, regardless of size or industry, can access cutting edge tools and expertise to bring their ideas to life. Whether it's building on the traditional Web2 framework or venturing into the emerging world of Web3, Vetor Labs is the bridge that connects the two worlds and ensures that all businesses can innovate, scale, and succeed.",
-      name: "Vison",
-      src: Vision.src,
+      icon: <FaUsers className="w-6 h-6" />,
+      title: "User-Centric Development",
+      description: "Our development process centers around real user needs, ensuring our solutions are both powerful and accessible."
     },
     {
-      quote:
-        "Vetor Labs’s mission is to provide businesses, entrepreneurs, and creators with the resources, tools, and knowledge they need to turn their visions into reality. Through our platform, we combine AI, blockchain, and robust project management solutions to create a seamless, end to end experience. We aim to make digital transformation accessible to all, allowing businesses to focus on growth and innovation, while we take care of the technology.",
-      name: "Mission",
-      src: Mission.src,
+      icon: <FaLightbulb className="w-6 h-6" />,
+      title: "Innovation Through Iteration",
+      description: "We believe in rapid prototyping and continuous improvement to bring the best possible solutions to market."
     },
+    {
+      icon: <FaRocket className="w-6 h-6" />,
+      title: "Open Collaboration",
+      description: "We foster an environment of open communication and collaboration to drive innovation and success."
+    }
   ];
 
-  const data = [
+  const milestones = [
     {
-      category: "Founder & CEO",
-      title: "Ubongabasi Joseph",
-      src: Kavod.src,
-      content: <Content />,
-      icons: [
-        { icon: <FaXTwitter />, link: "https://x.com/iamkavod_" },
-        { icon: <FaLinkedin />, link: "https://linkedin.com/in/iamkavod" },
-        { icon: <IoGlobeSharp />, link: "https://iamkavod.me" },
-        { icon: <MdEmail />, link: "mailto:info@iamkavod.me" },
-        { icon: <FaGithub />, link: "https://github.com/iamkavod" },
-      ],
+      year: "2020",
+      title: "CreedTech Group Founded",
+      description: "Started as a technology consultancy focusing on Web2 development and digital transformation."
     },
     {
-      category: "Senior Blockchain Engineer",
-      title: "Isaac Ekhagu'ere",
-      src: Isaac.src,
-      content: <Content />,
-      icons: [
-        { icon: <FaXTwitter />, link: "https://x.com/EVMlord" },
-        { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/evmlord/" },
-        { icon: <IoGlobeSharp />, link: "https://evmlord.dev/" },
-        // { icon: <MdEmail />, link: "" },
-        // { icon: <FaGithub />, link: "" },
-      ],
-    },
-    // {
-    //   category: "Co Founder & CBDC",
-    //   title: "Fabian Egbuna",
-    //   content: <Content />,
-    //   icons: [
-    //     { icon: <FaXTwitter />, link: "" },
-    //     { icon: <FaLinkedin />, link: "" },
-    //     { icon: <IoGlobeSharp />, link: "" },
-    //     { icon: <MdEmail />, link: "mailto:" },
-    //   ],
-    // },
-    {
-      category: "Founding AI Engineer",
-      title: "Bassat Youssry",
-      src: Bassat.src,
-      content: <Content />,
-      icons: [
-        // { icon: <FaXTwitter />, link: "" },
-        // { icon: <FaLinkedin />, link: "" },
-        // { icon: <MdEmail />, link: "" },
-        // { icon: <FaGithub />, link: "" },
-      ],
+      year: "2022",
+      title: "Blockchain Expansion",
+      description: "Expanded into Web3 and blockchain development, building solutions for the decentralized ecosystem."
     },
     {
-      category: "Founding Frontend Engineer",
-      title: "Climax Mba",
-      src: Climax.src,
-      content: <Content />,
-      icons: [
-        { icon: <FaXTwitter />, link: "https://x.com/climaxmba" },
-        { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/climaxmba" },
-        { icon: <IoGlobeSharp />, link: "https://climaxmba.netlify.app" },
-        { icon: <MdEmail />, link: "mailto:climaxium150@gmail.com" },
-        { icon: <FaGithub />, link: "https://github.com/climaxmba" },
-      ],
+      year: "2023",
+      title: "AI Integration",
+      description: "Integrated artificial intelligence capabilities to enhance our development offerings and create smarter solutions."
     },
-    // {
-    //     category: "Advisor",
-    //     title: "David Jimoh",
-    //     src: David.src,
-    //     content: <Content />,
-    //     icons: [
-    //         { icon: <FaXTwitter />, link: '' },
-    //         { icon: <FaLinkedin />, link: 'https://www.linkedin.com/in/david-jimoh-87263a11a' },
-    //         { icon: <IoGlobeSharp />, link: '' },
-    //         { icon: <MdEmail />, link: '' },
-    //     ]
-    // },
-    // {
-    //   category: "Founding Frontend Engineer",
-    //   title: "Olaniyan Olamayowa Fatimah",
-    //   src: Tolu.src,
-    //   content: <Content />,
-    //   icons: [
-    //     { icon: <FaXTwitter />, link: "https://x.com/olamayorrhh" },
-    //     {
-    //       icon: <FaLinkedin />,
-    //       link: "https://www.linkedin.com/in/olaniyan-olamayowa/",
-    //     },
-    //     {
-    //       icon: <IoGlobeSharp />,
-    //       link: "https://my-portfolio-7gu4.vercel.app/",
-    //     },
-    //     { icon: <MdEmail />, link: "mailto:mayowafolaniyan@gmail.com" },
-    //     { icon: <FaGithub />, link: "https://github.com/Olamayorrh" },
-    //   ],
-    // },
-    // {
-    //   category: "Founding FullStack Enginner",
-    //   title: "Olaniyan Ayoade",
-    //   src: Ayoade.src,
-    //   content: <Content />,
-    //   icons: [
-    //     { icon: <FaXTwitter />, link: "http://x.com/joycrowntech" },
-    //     {
-    //       icon: <FaLinkedin />,
-    //       link: "https://www.linkedin.com/in/olaniyanayoade",
-    //     },
-    //     { icon: <IoGlobeSharp />, link: "https://jctech.vercel.app" },
-    //     { icon: <MdEmail />, link: "mailto:olaniyanayoade999@gmail.com" },
-    //     { icon: <FaGithub />, link: "https://github.com/Joycrown" },
-    //   ],
-    // },
     {
-      category: "Product Designer",
-      title: "Jeffrey Nwachukwu",
-      src: Nuevo.src,
-      content: <Content />,
-      icons: [
-        // { icon: <FaXTwitter />, link: "" },
-        // { icon: <FaLinkedin />, link: "" },
-        // { icon: <IoGlobeSharp />, link: "" },
-        // { icon: <MdEmail />, link: "" },
-        // { icon: <FaGithub />, link: "" },
-      ],
-    },
+      year: "2024",
+      title: "Affidex Lab Evolution",
+      description: "Transformed into Affidex Lab, an incubation laboratory focused on core utility projects and MVP development."
+    }
   ];
 
-  const cards = data.map((card, index) => (
-    <Card key={index} card={card} index={index} />
-  ));
-
   return (
-    <div className="bg-black py-6 px-2 xl:overflow-none lg:overflow-x-hidden md:overflow-x-hidden overflow-x-hidden">
-      {/* Hero */}
-      <div className="h-[30rem] w-full bg-black bg-grid-white/[.7] flex flex-col items-center justify-center text-center">
-        <h1 className="text-4xl xl:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-gray-200 to-gray-500 py-8">
-          Building the Future with Innovation and Purpose
+    <div className="bg-black min-h-screen xl:p-8 lg:px-5 p-5">
+      {/* Hero Section */}
+      <div className="text-center py-16 mb-12">
+        <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+          About <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">Affidex Lab</span>
         </h1>
-        <p className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-gray-200 to-gray-500 py-8 text-center">
-          building latest in technology to help businesses succeed in an
-          ever-evolving digital landscape
+        <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+          Formerly CreedTech Group, we've evolved into an incubation laboratory focused on building the next generation of blockchain and AI-powered solutions.
         </p>
       </div>
 
-      {/* About Us */}
-      <div className="flex justify-center items-center xl:p-20">
-        <AboutUsWidget aboutus={aboutus} />
+      {/* Story Section */}
+      <div className="mb-20">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-gray-900 rounded-2xl p-8 border border-gray-800">
+            <div className="flex items-center space-x-3 mb-6">
+              <FaHistory className="text-purple-500 w-8 h-8" />
+              <h2 className="text-3xl font-bold text-white">Our Story</h2>
+            </div>
+            <div className="prose prose-invert max-w-none">
+              <p className="text-gray-300 text-lg leading-relaxed mb-6">
+                Affidex Lab represents the natural evolution of CreedTech Group, born from our vision to create meaningful, utility-focused projects that push the boundaries of what's possible with blockchain and artificial intelligence technologies.
+              </p>
+              <p className="text-gray-300 leading-relaxed mb-6">
+                Our transformation from a traditional development consultancy to a specialized incubation laboratory reflects our deep commitment to innovation and our belief that the future belongs to those who can seamlessly integrate privacy-first design with cutting-edge technology.
+              </p>
+              <p className="text-gray-300 leading-relaxed">
+                Today, we focus on developing minimum viable products that solve real-world problems, with our flagship projects Cipher Wallet and Gamify demonstrating our ability to turn complex technologies into accessible, user-friendly solutions.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
 
-      {/* Meet The Team */}
-      <div className="w-full h-full py-20">
-        <h2 className="max-w-screen xl:px-20 mx-auto text-xl md:text-5xl font-bold text-gray-800 dark:text-gray-200 font-sans">
-          Meet Our Team
-        </h2>
-        <Carousel items={cards} />
+      {/* Mission, Vision, and Values */}
+      <div className="mb-20">
+        <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto mb-12">
+          {/* Mission */}
+          <div className="bg-gray-900 rounded-2xl p-8 border border-gray-800">
+            <div className="flex items-center space-x-3 mb-6">
+              <FaBullseye className="text-purple-500 w-8 h-8" />
+              <h2 className="text-2xl font-bold text-white">Our Mission</h2>
+            </div>
+            <p className="text-gray-300 leading-relaxed">
+              To incubate and develop innovative blockchain and AI solutions that prioritize user privacy, accessibility, and real-world utility. We bridge the gap between complex technologies and practical applications, making advanced systems usable for everyone.
+            </p>
+          </div>
+
+          {/* Vision */}
+          <div className="bg-gray-900 rounded-2xl p-8 border border-gray-800">
+            <div className="flex items-center space-x-3 mb-6">
+              <FaEye className="text-purple-500 w-8 h-8" />
+              <h2 className="text-2xl font-bold text-white">Our Vision</h2>
+            </div>
+            <p className="text-gray-300 leading-relaxed">
+              To become the leading incubation laboratory for core utility projects, fostering an ecosystem where privacy-first solutions and AI-powered tools work together to create a more secure, intelligent, and accessible digital future.
+            </p>
+          </div>
+        </div>
+
+        {/* Values */}
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold text-white text-center mb-8">Our Core Values</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {values.map((value, index) => (
+              <div key={index} className="bg-gray-900 rounded-xl p-6 border border-gray-800 hover:border-gray-600 transition-colors">
+                <div className="flex items-center space-x-3 mb-4">
+                  <div className="p-2 bg-purple-600 rounded-lg text-white">
+                    {value.icon}
+                  </div>
+                  <h3 className="text-lg font-semibold text-white">{value.title}</h3>
+                </div>
+                <p className="text-gray-400 text-sm leading-relaxed">{value.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Timeline */}
+      <div className="mb-20">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-white text-center mb-12">Our Journey</h2>
+          <div className="space-y-8">
+            {milestones.map((milestone, index) => (
+              <div key={index} className="flex items-start space-x-6">
+                <div className="bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full w-16 h-16 flex items-center justify-center font-bold text-sm flex-shrink-0">
+                  {milestone.year}
+                </div>
+                <div className="flex-1 bg-gray-900 rounded-xl p-6 border border-gray-800">
+                  <h3 className="text-xl font-semibold text-white mb-2">{milestone.title}</h3>
+                  <p className="text-gray-300">{milestone.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* What Sets Us Apart */}
+      <div className="mb-20">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold text-white text-center mb-8">What Sets Us Apart</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <FaShieldAlt className="w-8 h-8" />
+              </div>
+              <h3 className="text-xl font-semibold text-white mb-3">Privacy-First Approach</h3>
+              <p className="text-gray-400">
+                We build solutions that prioritize user privacy and data protection from the ground up, never as an afterthought.
+              </p>
+            </div>
+            
+            <div className="text-center">
+              <div className="bg-gradient-to-r from-green-600 to-teal-600 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <FaLightbulb className="w-8 h-8" />
+              </div>
+              <h3 className="text-xl font-semibold text-white mb-3">Innovation Focus</h3>
+              <p className="text-gray-400">
+                We stay at the cutting edge of blockchain and AI technology to create solutions that truly make a difference.
+              </p>
+            </div>
+            
+            <div className="text-center">
+              <div className="bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <FaUsers className="w-8 h-8" />
+              </div>
+              <h3 className="text-xl font-semibold text-white mb-3">User-Centric Design</h3>
+              <p className="text-gray-400">
+                Every solution we create is designed with real users in mind, ensuring accessibility and usability at every step.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* CTA Section */}
+      <div className="text-center py-16 bg-gray-900 rounded-2xl border border-gray-800">
+        <h2 className="text-3xl font-bold text-white mb-4">Ready to Join Our Mission?</h2>
+        <p className="text-gray-300 max-w-2xl mx-auto mb-8">
+          Whether you're interested in our products, services, or potential partnerships, we'd love to hear from you.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="/contact"
+            className="bg-gradient-to-r from-purple-600 to-pink-600 text-white py-3 px-8 rounded-lg font-semibold hover:opacity-90 transition-opacity"
+          >
+            Get In Touch
+          </a>
+          <a
+            href="/products"
+            className="border border-purple-600 text-purple-400 py-3 px-8 rounded-lg font-semibold hover:bg-purple-600 hover:text-white transition-colors"
+          >
+            Explore Our Products
+          </a>
+        </div>
       </div>
     </div>
   );
-}
+};
+
+export default AboutPage;
