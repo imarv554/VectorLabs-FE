@@ -21,11 +21,13 @@ export default function Hero() {
               {hero?.hero?.map((he, h) => (
                 <div key={h} className="text-white flex flex-col gap-10">
                   <div className="flex flex-col gap-5">
-                    <div>
+                    <div className="flex flex-col gap-6">
                       <h1 className="xl:text-7xl lg:text-6xl md:text-4xl text-2xl capitalize text-center font-bold">
                         {he.title}
                       </h1>
-                      <TypeWidget words={words} />
+                      <div className="mt-4">
+                        <TypeWidget words={words} />
+                      </div>
                     </div>
                     <p className="text-center lg:text-xl text-lg">
                       {he.subtitle}
