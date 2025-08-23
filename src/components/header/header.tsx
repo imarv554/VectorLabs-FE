@@ -48,16 +48,16 @@ export default function Header() {
             <img
               src={header[0].icon?.src}
               alt={header[0].name}
-              className="lg:w-32 lg:h-auto w-[80px]"
+              className="lg:w-64 lg:h-auto w-[160px]"
             />
           </a>
           <a href="/" className="inline-flex items-center">
             <Image
-              height={30}
-              width={40}
+              height={60}
+              width={80}
               src={header[1].icon?.src as string}
               alt={header[1].name as string}
-              className="xl:hidden lg:hidden md:hidden w-[40px] h-[30px]"
+              className="xl:hidden lg:hidden md:hidden w-[80px] h-[60px]"
             />
           </a>
         </div>
@@ -108,7 +108,7 @@ export default function Header() {
               <img
                 src={header[0].icon?.src}
                 alt={header[0].name}
-                className="w-[100px]"
+                className="w-[200px]"
               />
             </a>
             <button
