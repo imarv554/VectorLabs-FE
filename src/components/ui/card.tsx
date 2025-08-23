@@ -11,7 +11,7 @@ export function Card() {
       {bodysection?.[0].benefits?.[0].boxes.map((boxes, i) => (
         <div
           key={i}
-          className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-full p-4 relative h-[40rem]"
+          className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-full p-4 relative min-h-[20rem] h-auto"
         >
           {/* <div className="text-white text-5xl">{boxes.icon}</div> */}
           <div>

@@ -45,12 +45,12 @@ export const TypeWidget = ({
 
   const renderWords = () => {
     return (
-      <motion.div ref={scope} className="flex flex-wrap justify-center items-center">
+      <motion.div ref={scope} className="flex flex-wrap justify-center items-center max-w-full px-2">
         {wordsArray.map((word, idx) => {
           return (
             <div
               key={`word-${idx}`}
-              className="inline-flex xl:gap-3 lg:gap-3 md:gap-3 gap-1"
+              className="inline-flex xl:gap-3 lg:gap-3 md:gap-2 gap-1 flex-wrap"
             >
               {word.text.map((char, index) => (
                 <motion.span
@@ -73,7 +73,7 @@ export const TypeWidget = ({
   return (
     <div
       className={cn(
-        "xl:text-7xl lg:text-6xl md:text-4xl text-xl text-center font-bold",
+        "xl:text-6xl lg:text-5xl md:text-3xl text-lg text-center font-bold max-w-full overflow-hidden",
         className,
       )}
     >
