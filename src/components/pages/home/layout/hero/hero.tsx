@@ -1,20 +1,9 @@
 "use client";
 import homeData from "@/data/home.data";
 import { HSidebar } from "@/components/ui";
-import { TypeWidget } from "@/widgets/typewidget";
 
 export default function Hero() {
   const { herosection } = homeData.homepage;
-  const words = [
-    {
-      text: "Incubation Lab for Core Utility",
-      className: "text-secondary",
-    },
-    {
-      text: "Projects",
-      className: "text-secondary",
-    },
-  ];
 
   return (
     <div className="flex justify-center items-center py-40 gap-20 w-full xl:px-0 lg:px-10 px-4 overflow-hidden">
@@ -30,7 +19,9 @@ export default function Hero() {
                         {he.title}
                       </h1>
                       <div className="mt-4">
-                        <TypeWidget words={words} />
+                        <h2 className="xl:text-6xl lg:text-5xl md:text-3xl text-lg text-center font-bold text-secondary max-w-full">
+                          Incubation Lab for Core Utility Projects
+                        </h2>
                       </div>
                     </div>
                     <p className="text-center lg:text-xl text-lg">
