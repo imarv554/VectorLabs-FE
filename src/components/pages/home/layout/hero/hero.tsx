@@ -7,7 +7,7 @@ export default function Hero() {
   const { herosection } = homeData.homepage;
   const words = [
     {
-      text: "Future Of Connectivity",
+      text: "Incubation Lab for Core Utility Projects",
       className: "text-secondary",
     },
   ];
